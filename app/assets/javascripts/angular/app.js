@@ -1,5 +1,5 @@
 angular
-    .module('AngularRails', [
+    .module('desidancevids', [
         'ngRoute',
         'templates'
     ]).config(function ($routeProvider, $locationProvider) {
