@@ -1,3 +1,5 @@
+#= depend_on_asset "home.html"
+
 angular
     .module('desidancevids', [
         'ngRoute',
@@ -5,7 +7,7 @@ angular
     ]).config(function ($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
-                templateUrl: 'home.html',
+                templateUrl: <%= asset_path('home.html') %>,
                 controller: 'HomeCtrl'
             });
         $locationProvider.html5Mode(true);
